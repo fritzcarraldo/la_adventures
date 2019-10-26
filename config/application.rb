@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module LaAdventures
   class Application < Rails::Application
+  	config.autoload_paths += %W(#{config.root}/app/uploaders)
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
